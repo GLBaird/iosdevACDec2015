@@ -1,65 +1,151 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JKB-ou-CyH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Threads-->
+        <scene sceneID="rXc-7G-ZWk">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Networking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6sG-s4-8DI" customClass="ThreadsViewController" customModule="Networking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="5nB-Ov-jH2"/>
+                        <viewControllerLayoutGuide type="bottom" id="MKI-ET-w0v"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="3iK-0O-vMO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOC-a9-XTI">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6h-b3-Ti8">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </scrollView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbq-bU-Tkm">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jE6-rD-8GL">
+                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="dJj-vj-8l4"/>
-                                </constraints>
                                 <items>
-                                    <barButtonItem title="SYNC" id="6jy-tX-l3l">
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cNv-pn-m0E"/>
+                                    <barButtonItem title="Foreground" id="PbD-Yc-N1g">
                                         <connections>
-                                            <action selector="syncDownload:" destination="BYZ-38-t0r" id="pWn-hZ-4cS"/>
+                                            <action selector="foreground:" destination="6sG-s4-8DI" id="V2D-88-jdT"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="ASYNC" id="RCt-8m-noy">
+                                    <barButtonItem title="Background" id="5fN-KY-WXv">
                                         <connections>
-                                            <action selector="asyncDownload:" destination="BYZ-38-t0r" id="HHi-99-m20"/>
+                                            <action selector="background:" destination="6sG-s4-8DI" id="vJZ-m9-M7I"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="fbq-bU-Tkm" secondAttribute="trailing" id="5AM-Be-ZYR"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fbq-bU-Tkm" secondAttribute="bottom" id="5cN-UW-bdI"/>
-                            <constraint firstItem="iOC-a9-XTI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="C6Y-YW-fuu"/>
-                            <constraint firstItem="fbq-bU-Tkm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="D9B-qr-oCQ"/>
-                            <constraint firstAttribute="trailing" secondItem="iOC-a9-XTI" secondAttribute="trailing" id="J8m-Hz-BRB"/>
-                            <constraint firstAttribute="bottom" secondItem="iOC-a9-XTI" secondAttribute="bottom" id="y72-bX-b3f"/>
-                            <constraint firstItem="iOC-a9-XTI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ya8-Ox-Z9A"/>
+                            <constraint firstAttribute="bottom" secondItem="U6h-b3-Ti8" secondAttribute="bottom" id="8Oo-nh-aFX"/>
+                            <constraint firstItem="MKI-ET-w0v" firstAttribute="top" secondItem="jE6-rD-8GL" secondAttribute="bottom" id="Caq-OG-V4D"/>
+                            <constraint firstAttribute="trailing" secondItem="jE6-rD-8GL" secondAttribute="trailing" id="Pux-CJ-vVE"/>
+                            <constraint firstItem="U6h-b3-Ti8" firstAttribute="leading" secondItem="3iK-0O-vMO" secondAttribute="leading" id="Ufp-5L-6w5"/>
+                            <constraint firstItem="jE6-rD-8GL" firstAttribute="leading" secondItem="3iK-0O-vMO" secondAttribute="leading" id="XAs-De-YEG"/>
+                            <constraint firstAttribute="trailing" secondItem="U6h-b3-Ti8" secondAttribute="trailing" id="XSm-Lf-rWf"/>
+                            <constraint firstItem="U6h-b3-Ti8" firstAttribute="top" secondItem="3iK-0O-vMO" secondAttribute="top" id="peO-el-rLZ"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Threads" id="RCW-qg-WCB"/>
                     <connections>
-                        <outlet property="scrollView" destination="iOC-a9-XTI" id="uKx-Wc-MgU"/>
+                        <outlet property="scrollView" destination="U6h-b3-Ti8" id="5GJ-eR-Dcn"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FWZ-lg-Ycn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="445" y="462"/>
+            <point key="canvasLocation" x="836" y="781"/>
+        </scene>
+        <!--Get / Post-->
+        <scene sceneID="5v7-g1-5bq">
+            <objects>
+                <viewController id="lb6-8N-7yh" customClass="GetPostViewController" customModule="Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cAm-3y-yax"/>
+                        <viewControllerLayoutGuide type="bottom" id="dAl-eM-LC4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SPW-Ll-EAe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9sG-pW-3b6">
+                                <rect key="frame" x="20" y="28" width="560" height="465"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k18-0q-yAw">
+                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Get" id="WQF-0O-DRz">
+                                        <connections>
+                                            <action selector="get:" destination="lb6-8N-7yh" id="f65-aI-dYm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Post" id="Dcq-8X-HeU">
+                                        <connections>
+                                            <action selector="post:" destination="lb6-8N-7yh" id="Xrt-xj-zU0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="JSON" id="2pX-30-cHs">
+                                        <connections>
+                                            <action selector="json:" destination="lb6-8N-7yh" id="B5O-ut-bdr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="XML" id="Txx-RV-Hah">
+                                        <connections>
+                                            <action selector="xml:" destination="lb6-8N-7yh" id="YX6-Be-x35"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9sG-pW-3b6" firstAttribute="top" secondItem="cAm-3y-yax" secondAttribute="bottom" constant="8" id="4Fs-2V-jcy"/>
+                            <constraint firstItem="k18-0q-yAw" firstAttribute="leading" secondItem="SPW-Ll-EAe" secondAttribute="leading" id="Eny-y1-tpg"/>
+                            <constraint firstItem="9sG-pW-3b6" firstAttribute="trailing" secondItem="SPW-Ll-EAe" secondAttribute="trailingMargin" id="ICM-cl-OSZ"/>
+                            <constraint firstItem="dAl-eM-LC4" firstAttribute="top" secondItem="k18-0q-yAw" secondAttribute="bottom" id="Vki-2t-qA1"/>
+                            <constraint firstItem="9sG-pW-3b6" firstAttribute="leading" secondItem="SPW-Ll-EAe" secondAttribute="leadingMargin" id="d58-2Y-iMV"/>
+                            <constraint firstItem="k18-0q-yAw" firstAttribute="top" secondItem="9sG-pW-3b6" secondAttribute="bottom" constant="14" id="uzi-Bi-uaW"/>
+                            <constraint firstAttribute="trailing" secondItem="k18-0q-yAw" secondAttribute="trailing" id="vUI-Ed-Ce5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Get / Post" id="2lb-B7-6qT"/>
+                    <connections>
+                        <outlet property="logText" destination="9sG-pW-3b6" id="TXw-7X-V4K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j6z-eC-YGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="120"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aMC-YZ-1cK">
+            <objects>
+                <tabBarController id="JKB-ou-CyH" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="u2c-gQ-Mh7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lb6-8N-7yh" kind="relationship" relationship="viewControllers" id="wPL-x2-Rep"/>
+                        <segue destination="6sG-s4-8DI" kind="relationship" relationship="viewControllers" id="4pi-GT-H33"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="97C-nQ-fab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16" y="451"/>
         </scene>
     </scenes>
 </document>
