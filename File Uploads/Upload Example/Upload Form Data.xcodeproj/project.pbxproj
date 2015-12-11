@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3518DC861BADD11900CEE108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3518DC851BADD11900CEE108 /* AppDelegate.swift */; };
+		3518DC881BADD11900CEE108 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3518DC871BADD11900CEE108 /* ViewController.swift */; };
+		3518DC8B1BADD11900CEE108 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3518DC891BADD11900CEE108 /* Main.storyboard */; };
+		3518DC901BADD11900CEE108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3518DC8E1BADD11900CEE108 /* LaunchScreen.storyboard */; };
+		3518DC981BADEA9200CEE108 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3518DC971BADEA9200CEE108 /* Media.xcassets */; settings = {ASSET_TAGS = (); }; };
+		3518DC9A1BAE018200CEE108 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3518DC991BAE018200CEE108 /* ShadowView.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3518DC821BADD11900CEE108 /* Upload Form Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Upload Form Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3518DC851BADD11900CEE108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3518DC871BADD11900CEE108 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3518DC8A1BADD11900CEE108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3518DC8F1BADD11900CEE108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3518DC911BADD11900CEE108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3518DC971BADEA9200CEE108 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		3518DC991BAE018200CEE108 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		3518DC9E1BAEA80800CEE108 /* process.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = process.php; sourceTree = "<group>"; };
+		3518DC9F1BAEA80800CEE108 /* input.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = input.php; sourceTree = "<group>"; };
+		3518DCA01BAEA80800CEE108 /* process-image-binary.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "process-image-binary.php"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3518DC7F1BADD11900CEE108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3518DC791BADD11900CEE108 = {
+			isa = PBXGroup;
+			children = (
+				3518DC841BADD11900CEE108 /* Upload Form Data */,
+				3518DC831BADD11900CEE108 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3518DC831BADD11900CEE108 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3518DC821BADD11900CEE108 /* Upload Form Data.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3518DC841BADD11900CEE108 /* Upload Form Data */ = {
+			isa = PBXGroup;
+			children = (
+				3518DC851BADD11900CEE108 /* AppDelegate.swift */,
+				3518DC891BADD11900CEE108 /* Main.storyboard */,
+				3518DC9C1BAEA68300CEE108 /* View Controllers */,
+				3518DC9D1BAEA69000CEE108 /* Views */,
+				3518DC9B1BAEA67400CEE108 /* Server Side Code */,
+				3518DC971BADEA9200CEE108 /* Media.xcassets */,
+				3518DC8E1BADD11900CEE108 /* LaunchScreen.storyboard */,
+				3518DC911BADD11900CEE108 /* Info.plist */,
+			);
+			path = "Upload Form Data";
+			sourceTree = "<group>";
+		};
+		3518DC9B1BAEA67400CEE108 /* Server Side Code */ = {
+			isa = PBXGroup;
+			children = (
+				3518DC9E1BAEA80800CEE108 /* process.php */,
+				3518DC9F1BAEA80800CEE108 /* input.php */,
+				3518DCA01BAEA80800CEE108 /* process-image-binary.php */,
+			);
+			name = "Server Side Code";
+			sourceTree = "<group>";
+		};
+		3518DC9C1BAEA68300CEE108 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3518DC871BADD11900CEE108 /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3518DC9D1BAEA69000CEE108 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3518DC991BAE018200CEE108 /* ShadowView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3518DC811BADD11900CEE108 /* Upload Form Data */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3518DC941BADD11900CEE108 /* Build configuration list for PBXNativeTarget "Upload Form Data" */;
+			buildPhases = (
+				3518DC7E1BADD11900CEE108 /* Sources */,
+				3518DC7F1BADD11900CEE108 /* Frameworks */,
+				3518DC801BADD11900CEE108 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Upload Form Data";
+			productName = "Upload Form Data";
+			productReference = 3518DC821BADD11900CEE108 /* Upload Form Data.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3518DC7A1BADD11900CEE108 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Leon Baird";
+				TargetAttributes = {
+					3518DC811BADD11900CEE108 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 3518DC7D1BADD11900CEE108 /* Build configuration list for PBXProject "Upload Form Data" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3518DC791BADD11900CEE108;
+			productRefGroup = 3518DC831BADD11900CEE108 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3518DC811BADD11900CEE108 /* Upload Form Data */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3518DC801BADD11900CEE108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3518DC901BADD11900CEE108 /* LaunchScreen.storyboard in Resources */,
+				3518DC981BADEA9200CEE108 /* Media.xcassets in Resources */,
+				3518DC8B1BADD11900CEE108 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3518DC7E1BADD11900CEE108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3518DC9A1BAE018200CEE108 /* ShadowView.swift in Sources */,
+				3518DC881BADD11900CEE108 /* ViewController.swift in Sources */,
+				3518DC861BADD11900CEE108 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3518DC891BADD11900CEE108 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3518DC8A1BADD11900CEE108 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3518DC8E1BADD11900CEE108 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3518DC8F1BADD11900CEE108 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3518DC921BADD11900CEE108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3518DC931BADD11900CEE108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3518DC951BADD11900CEE108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Upload Form Data/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leonbaird.Upload-Form-Data";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3518DC961BADD11900CEE108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Upload Form Data/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leonbaird.Upload-Form-Data";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3518DC7D1BADD11900CEE108 /* Build configuration list for PBXProject "Upload Form Data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3518DC921BADD11900CEE108 /* Debug */,
+				3518DC931BADD11900CEE108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3518DC941BADD11900CEE108 /* Build configuration list for PBXNativeTarget "Upload Form Data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3518DC951BADD11900CEE108 /* Debug */,
+				3518DC961BADD11900CEE108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3518DC7A1BADD11900CEE108 /* Project object */;
+}

@@ -8,12 +8,13 @@
 
 import UIKit
 import CoreData
+import MapKit
 
 let PlaceEntityName = "Place"
 let PlaceAttributeName = "placeName"
 let PlaceAttributeDate = "dateVisited"
 
-class Place: NSManagedObject {
+class Place: NSManagedObject, MKAnnotation {
 
     var longDate:String {
         return NSDateFormatter.localizedStringFromDate(
@@ -41,6 +42,20 @@ class Place: NSManagedObject {
                 try NSFileManager.defaultManager().removeItemAtPath(NSHomeDirectory() + imagePath!)
             }
         } catch {}
+    }
+    
+    // MARK: - Map Annotations
+    
+    var coordinate:CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: geoLat, longitude: geoLong)
+    }
+    
+    var title:String? {
+        return placeName
+    }
+    
+    var subtitle:String? {
+        return "Visited on \(shortDate)"
     }
 
 }

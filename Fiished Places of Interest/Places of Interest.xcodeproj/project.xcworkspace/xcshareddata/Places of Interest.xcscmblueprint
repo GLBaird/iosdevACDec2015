@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "45DDB2391E19428924A556A66CF5102B8BE72A45",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B51FBB5CC0747A61EEE83EC32DB31A1E42D84B30" : 0,
+    "45DDB2391E19428924A556A66CF5102B8BE72A45" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "16363DEC-F12F-4532-81C4-1F76F8546A3C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B51FBB5CC0747A61EEE83EC32DB31A1E42D84B30" : "iOSDevACJuly062015",
+    "45DDB2391E19428924A556A66CF5102B8BE72A45" : "iOSSep142015MS"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Places of Interest",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Fiished Places of Interest\/Places of Interest.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/GLBaird\/iOSSep142015MS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "45DDB2391E19428924A556A66CF5102B8BE72A45"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/GLBaird\/iOSDevACJuly062015.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B51FBB5CC0747A61EEE83EC32DB31A1E42D84B30"
+    }
+  ]
+}

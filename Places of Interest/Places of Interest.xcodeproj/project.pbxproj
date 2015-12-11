@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3535C8281C1AD74200E442A2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3535C8271C1AD74200E442A2 /* DetailsViewController.swift */; };
+		3535C82A1C1ADD9E00E442A2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3535C8291C1ADD9E00E442A2 /* MapViewController.swift */; };
 		3562019D1C19CEDC00CBDFC1 /* Place+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3562019B1C19CEDC00CBDFC1 /* Place+CoreDataProperties.swift */; };
 		3562019E1C19CEDC00CBDFC1 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3562019C1C19CEDC00CBDFC1 /* Place.swift */; };
 		356201A01C19DFED00CBDFC1 /* PlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3562019F1C19DFED00CBDFC1 /* PlaceTableViewController.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3535C8271C1AD74200E442A2 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		3535C8291C1ADD9E00E442A2 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		3562019B1C19CEDC00CBDFC1 /* Place+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3562019C1C19CEDC00CBDFC1 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		3562019F1C19DFED00CBDFC1 /* PlaceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTableViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				358A51511C198F6C005AB06B /* ToolbarViewController.swift */,
 				358A51571C199653005AB06B /* AddPlaceViewController.swift */,
 				3562019F1C19DFED00CBDFC1 /* PlaceTableViewController.swift */,
+				3535C8271C1AD74200E442A2 /* DetailsViewController.swift */,
+				3535C8291C1ADD9E00E442A2 /* MapViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -188,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3535C82A1C1ADD9E00E442A2 /* MapViewController.swift in Sources */,
 				358A51581C199653005AB06B /* AddPlaceViewController.swift in Sources */,
 				3562019D1C19CEDC00CBDFC1 /* Place+CoreDataProperties.swift in Sources */,
 				358A51521C198F6C005AB06B /* ToolbarViewController.swift in Sources */,
@@ -197,6 +204,7 @@
 				3562019E1C19CEDC00CBDFC1 /* Place.swift in Sources */,
 				358A51541C19917C005AB06B /* Functions.swift in Sources */,
 				356201A21C19E03100CBDFC1 /* PlaceCell.swift in Sources */,
+				3535C8281C1AD74200E442A2 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

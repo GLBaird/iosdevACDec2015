@@ -1,0 +1,21 @@
+let task = session.dataTaskWithRequest(request) { data, response, error in
+    if let httpResponse = response as? NSHTTPURLResponse {
+        let cookies = NSHTTPCookie.cookiesWithResponseHeaderFields(httpResponse.allHeaderFields, forURL: response.URL!) as! [NSHTTPCookie]
+        NSHTTPCookieStorage.sharedHTTPCookieStorage().setCookies(cookies, forURL: response.URL!, mainDocumentURL: nil)
+        for cookie in cookies {
+            var cookieProperties = [String: AnyObject]()
+            cookieProperties[NSHTTPCookieName] = cookie.name
+            cookieProperties[NSHTTPCookieValue] = cookie.value()
+            cookieProperties[NSHTTPCookieDomain] = cookie.domain
+            cookieProperties[NSHTTPCookiePath] = cookie.path
+            cookieProperties[NSHTTPCookieVersion] = NSNumber(integer: cookie.version)
+            cookieProperties[NSHTTPCookieExpires] = NSDate().dateByAddingTimeInterval(31536000)
+
+            let newCookie = NSHTTPCookie(properties: cookieProperties)
+            NSHTTPCookieStorage.sharedHTTPCookieStorage().setCookie(newCookie!)
+
+            println("name: \(cookie.name) value: \(cookie.value())")
+        }
+    }
+}
+task.resume()

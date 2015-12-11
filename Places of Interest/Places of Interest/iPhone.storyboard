@@ -188,7 +188,7 @@
         <!--Place Name-->
         <scene sceneID="N7X-wE-mF9">
             <objects>
-                <viewController id="v9U-E8-N8x" sceneMemberID="viewController">
+                <viewController id="v9U-E8-N8x" customClass="DetailsViewController" customModule="Places_of_Interest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pcJ-J4-wiy"/>
                         <viewControllerLayoutGuide type="bottom" id="UxJ-Yo-plZ"/>
@@ -237,8 +237,16 @@
                         </constraints>
                     </view>
                     <toolbarItems>
-                        <barButtonItem image="Facebook" id="lrL-1f-xNH"/>
-                        <barButtonItem image="Twitter" id="GFx-2n-4mk"/>
+                        <barButtonItem image="Facebook" id="lrL-1f-xNH">
+                            <connections>
+                                <action selector="postToSocial:" destination="v9U-E8-N8x" id="Ka6-12-rAN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem tag="1" image="Twitter" id="GFx-2n-4mk">
+                            <connections>
+                                <action selector="postToSocial:" destination="v9U-E8-N8x" id="RhU-hv-TSe"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="yn6-F8-c3O"/>
                         <barButtonItem image="Map" id="zM2-PG-hyF">
                             <connections>
@@ -248,6 +256,11 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Place Name" id="nTT-IZ-KT1"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="y7O-Nm-UJH" id="64M-eF-N79"/>
+                        <outlet property="descriptionText" destination="Hwl-HV-1ER" id="3Sf-MT-sOa"/>
+                        <outlet property="imageView" destination="hwQ-r6-07c" id="TCc-5D-6hn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ymA-P1-Hgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -256,7 +269,7 @@
         <!--Map-->
         <scene sceneID="MVw-Vp-2K9">
             <objects>
-                <viewController id="Gst-aI-xWN" sceneMemberID="viewController">
+                <viewController id="Gst-aI-xWN" customClass="MapViewController" customModule="Places_of_Interest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8gP-m3-DG3"/>
                         <viewControllerLayoutGuide type="bottom" id="TEz-EC-wLY"/>
@@ -281,12 +294,27 @@
                     </view>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="zbL-oy-NOf"/>
-                        <barButtonItem title="Standard" id="7sz-go-RRd"/>
-                        <barButtonItem tag="1" title="Satellite" id="lmq-B0-Lku"/>
-                        <barButtonItem tag="2" title="Hybrid" id="OGH-Ti-Iin"/>
+                        <barButtonItem title="Standard" id="7sz-go-RRd">
+                            <connections>
+                                <action selector="changeMapType:" destination="Gst-aI-xWN" id="slF-Q9-DmH"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem tag="1" title="Satellite" id="lmq-B0-Lku">
+                            <connections>
+                                <action selector="changeMapType:" destination="Gst-aI-xWN" id="wQy-jJ-i9B"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem tag="2" title="Hybrid" id="OGH-Ti-Iin">
+                            <connections>
+                                <action selector="changeMapType:" destination="Gst-aI-xWN" id="kdi-zb-fIx"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="xEx-5G-glN"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Map" id="tdK-Wo-713"/>
+                    <connections>
+                        <outlet property="map" destination="igl-wP-rPl" id="YaA-Lb-w8q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yAf-By-iye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
