@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3535C8281C1AD74200E442A2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3535C8271C1AD74200E442A2 /* DetailsViewController.swift */; };
 		3535C82A1C1ADD9E00E442A2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3535C8291C1ADD9E00E442A2 /* MapViewController.swift */; };
+		3535C8A41C1B379E00E442A2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3535C8A31C1B379E00E442A2 /* Settings.bundle */; };
 		3562019D1C19CEDC00CBDFC1 /* Place+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3562019B1C19CEDC00CBDFC1 /* Place+CoreDataProperties.swift */; };
 		3562019E1C19CEDC00CBDFC1 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3562019C1C19CEDC00CBDFC1 /* Place.swift */; };
 		356201A01C19DFED00CBDFC1 /* PlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3562019F1C19DFED00CBDFC1 /* PlaceTableViewController.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		3535C8271C1AD74200E442A2 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		3535C8291C1ADD9E00E442A2 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3535C8A31C1B379E00E442A2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		3562019B1C19CEDC00CBDFC1 /* Place+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3562019C1C19CEDC00CBDFC1 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		3562019F1C19DFED00CBDFC1 /* PlaceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTableViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				35F2E7061C18815400CC596A /* Views */,
 				35F2E7051C18814D00CC596A /* Models */,
 				35F2E6FD1C187B6600CC596A /* Info.plist */,
+				3535C8A31C1B379E00E442A2 /* Settings.bundle */,
 			);
 			path = "Places of Interest";
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3535C8A41C1B379E00E442A2 /* Settings.bundle in Resources */,
 				35F2E7041C187FEC00CC596A /* Media.xcassets in Resources */,
 				35F2E70C1C18820900CC596A /* iPad.storyboard in Resources */,
 				35F2E70A1C1881FD00CC596A /* iPhone.storyboard in Resources */,
